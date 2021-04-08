@@ -4,6 +4,7 @@
 
 * Outline
   1. ML basics
+  2. ANN (Artificial neural network)
 
 ---
 

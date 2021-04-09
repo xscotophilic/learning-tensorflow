@@ -1,9 +1,9 @@
 # ML basics
 
 - Outline
-  1. Classification
-  2. Regression
-  3. Neurons
+  1. Classification (Classification.ipynb)
+  2. Regression (Regression.ipynb)
+  3. Neurons (Theory only - Read from the given link "Deep Learning Basics")
 
 ---
 

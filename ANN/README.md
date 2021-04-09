@@ -1,8 +1,8 @@
 # Artificial neural network (ANN)
 
 - Outline
-  1. ANN Classification (For Prediction of single image upload test images.)
-  2. ANN Regression
+  1. ANN Classification (ArtificialNeuralNetworkClassification.ipynb) (For Prediction of single image - upload test images on colab.)
+  2. ANN Regression (ArtificialNeuralNetworkRegression.ipynb)
 
 ---
 

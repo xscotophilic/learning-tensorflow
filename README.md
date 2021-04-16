@@ -12,6 +12,7 @@
   1. ML basics
   2. ANN (Artificial neural network)
   3. Convolutional neural network (CNN)
+  4. Recurrent Neural Networks, Time Series, And Sequence Data
 
 ---
 

@@ -2,6 +2,18 @@
 
 > Recurrent neural networks, or RNNs, are a form of neural network that allows previous outputs to be used as inputs while maintaining hidden states.
 
+The Below image shows simple neural network
+
+<img src="simpleNN.png" width="400"/>
+
+Image source towardsdatascience.com
+
+The Below image shows Recurrent neural network
+
+<img src="RNN.png" width="400"/>
+
+Image source towardsdatascience.com
+
 - Advantages of RNN
 
   - The ability to process the input of any length
@@ -33,11 +45,19 @@
 
   - It is not only enough to learn from the past to foresee the future; we must also look into the future to correct the past.
 
+  - <img src="bidirectional.png" width="400"/>
+
+  (Bidirectional RNN) Image source towardsdatascience.com
+
   - This raises the inevitable question of how far into the future we should look, because if we have to wait for all inputs, the whole operation will become expensive.
 
 - Recursive Neural Networks:
 
   - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
+
+  - <img src="recursive.png" width="400"/>
+
+  (Recursive Neural Network) Image source towardsdatascience.com
 
   - **Recursive Neural Networks are a subset of Recurrent Neural Networks.** It is capable of operating on any hierarchical tree structure. Creating a tree-like structure by parsing through input nodes, merging child nodes into parent nodes, and combining them with other child/parent nodes. Recurrent Neural Networks perform the same function, but their structure is purely linear. Weights are added to the first input node, followed by the second, third, and so on.
 
@@ -46,6 +66,10 @@
 - Encoder Decoder Sequence to Sequence RNNs:
 
   - Encoder Decoder or Sequence to Sequence RNNs are widely used in translation services. The basic idea is that there are two RNNs, one of which is an encoder that constantly updates its hidden state and generates a single “Context” output. This is then fed into the decoder, which translates the context into a sequence of outputs. Another significant difference in this arrangement is that the lengths of the input and output sequences do not have to be the same.
+
+  - <img src="encoderdecoder.png" width="400"/>
+
+  (Encoder Decoder) Image source towardsdatascience.com
 
 - LSTMs
 

@@ -4,13 +4,13 @@
 
 The Below image shows simple neural network
 
-<img src="simpleNN.png" width="400"/>
+<img src="simpleNN.png" width="450px"/>
 
 Image source towardsdatascience.com
 
 The Below image shows Recurrent neural network
 
-<img src="RNN.png" width="400"/>
+<img src="RNN.png" width="650px"/>
 
 Image source towardsdatascience.com
 
@@ -45,7 +45,7 @@ Image source towardsdatascience.com
 
   - It is not only enough to learn from the past to foresee the future; we must also look into the future to correct the past.
 
-  - <img src="bidirectional.png" width="400"/>
+  - <img src="bidirectional.png" width="650px"/>
 
   (Bidirectional RNN) Image source towardsdatascience.com
 
@@ -55,7 +55,7 @@ Image source towardsdatascience.com
 
   - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
 
-  - <img src="recursive.png" width="400"/>
+  - <img src="recursive.png" width="650px"/>
 
   (Recursive Neural Network) Image source towardsdatascience.com
 
@@ -67,7 +67,7 @@ Image source towardsdatascience.com
 
   - Encoder Decoder or Sequence to Sequence RNNs are widely used in translation services. The basic idea is that there are two RNNs, one of which is an encoder that constantly updates its hidden state and generates a single “Context” output. This is then fed into the decoder, which translates the context into a sequence of outputs. Another significant difference in this arrangement is that the lengths of the input and output sequences do not have to be the same.
 
-  - <img src="encoderdecoder.png" width="400"/>
+  - <img src="encoderdecoder.png" width="750px"/>
 
   (Encoder Decoder) Image source towardsdatascience.com
 

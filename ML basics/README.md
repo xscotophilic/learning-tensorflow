@@ -9,8 +9,8 @@
 
 - You can read about ML basics in details on provided links:
 
-  - [Classification](https://github.com/tyrion404/ML-Logistic-Regression-Classification-in-Python)
+  - [Classification](https://github.com/xscotophilic/ML-Logistic-Regression-Classification-in-Python)
 
-  - [Regression](https://github.com/tyrion404/ML-Simple-linear-regression-in-python)
+  - [Regression](https://github.com/xscotophilic/ML-Simple-linear-regression-in-python)
 
-  - [Deep Learning Basics](https://github.com/tyrion404/ML-Deep-Learning-Basics)
+  - [Deep Learning Basics](https://github.com/xscotophilic/ML-Deep-Learning-Basics)

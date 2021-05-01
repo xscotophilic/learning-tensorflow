@@ -9,7 +9,7 @@
 - The code file itself contains description of each block.
 - You can read about CNN concepts in details on provided links:
 
-  - [Deep Learning Basics](https://github.com/tyrion404/ML-Deep-Learning-Basics)
+  - [Deep Learning Basics](https://github.com/xscotophilic/ML-Deep-Learning-Basics)
 
 - Extra Read:
 

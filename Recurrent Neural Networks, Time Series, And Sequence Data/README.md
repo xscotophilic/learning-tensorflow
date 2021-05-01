@@ -57,7 +57,7 @@ Image source towardsdatascience.com
 
   - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
 
-  - <img src="recursive.png" width="650px"/>
+  - <img src="recursive.png" width="500px"/>
 
   (Recursive Neural Network) Image source towardsdatascience.com
 

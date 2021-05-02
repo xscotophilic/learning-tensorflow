@@ -1,87 +1,19 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
-## Recurrent neural networks
+## Sequence Data
 
-> Recurrent neural networks, or RNNs, are a form of neural network that allows previous outputs to be used as inputs while maintaining hidden states.
+> The sequence imposes an explicit order on the observations. The order is important. It must be respected in the formulation of prediction problems that use the sequence data as input or output for the model.
 
-The Below image shows simple neural network
+- Sequence Prediction
 
-<img src="simpleNN.png" width="450px"/>
+  - Predicting the next value for a given input sequence is what sequence prediction is all about.
+  - For example:
+    - Given: 1, 2, 3, 4, 5
+    - Predict: 6
 
-Image source towardsdatascience.com
-
-The Below image shows Recurrent neural network
-
-<img src="RNN.png" width="650px"/>
-
-Image source towardsdatascience.com
-
-- Advantages of RNN
-
-  - The ability to process the input of any length
-  - The model's size does not increase with the size of the input
-  - Weights are shared over time.
-
-- How RNNs learn?
-
-  - Recurrent Neural Network remembers the past and bases its decisions on what it has learned from the past. Notice that basic feed-forward networks "know" information as well, but only what they learn during training.
-  - While RNNs learn similarly during training, they often remember what they learned from prior input(s) while producing output (s). It is a part of the network. RNNs can take one or more input vectors and generate one or more output vectors, with the output(s) influenced not only by weights applied to the inputs, as in a typical NN but also by a "hidden" state vector representing the background based on prior input(s)/output(s). As a result, depending on the previous inputs in the sequence, the same input may generate different output.
-
-- Deep RNNs
-
-  - Is it possible to render an RNN "deep" and achieve the multi-level abstractions and representations gained by "depth" in a typical neural network?
-
-  - Here are four ideas for adding depth:
-
-    1. The most obvious is to add hidden states on top of one another, feeding the output of one to the next.
-
-    2. We can also add nonlinear hidden layers between the input and hidden states.
-
-    3. We can deepen the hidden-to-hidden transition.
-
-    4. We can deepen the hidden-to-output transition.
-
-    [This paper](https://arxiv.org/pdf/1312.6026.pdf) by Pascanu et al. investigates this in-depth and establishes that deep RNNs outperform shallow RNNs.
-
-- Bidirectional RNNs
-
-  - It is not only enough to learn from the past to foresee the future; we must also look into the future to correct the past.
-
-  - <img src="bidirectional.png" width="650px"/>
-
-  (Bidirectional RNN) Image source towardsdatascience.com
-
-  - This raises the inevitable question of how far into the future we should look, because if we have to wait for all inputs, the whole operation will become expensive.
-
-- Recursive Neural Networks:
-
-  - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
-
-  - <img src="recursive.png" width="500px"/>
-
-  (Recursive Neural Network) Image source towardsdatascience.com
-
-  - **Recursive Neural Networks are a subset of Recurrent Neural Networks.** It is capable of operating on any hierarchical tree structure. Creating a tree-like structure by parsing through input nodes, merging child nodes into parent nodes, and combining them with other child/parent nodes. Recurrent Neural Networks perform the same function, but their structure is purely linear. Weights are added to the first input node, followed by the second, third, and so on.
-
-  - If the structure is set, as in Recurrent Neural Networks, then the training, backpropagation, and other processes make sense because they are identical to a normal neural network. But, if the structure isn't set, is that also learned?
-
-- Encoder Decoder Sequence to Sequence RNNs:
-
-  - Encoder Decoder or Sequence to Sequence RNNs are widely used in translation services. The basic idea is that there are two RNNs, one of which is an encoder that constantly updates its hidden state and generates a single “Context” output. This is then fed into the decoder, which translates the context into a sequence of outputs. Another significant difference in this arrangement is that the lengths of the input and output sequences do not have to be the same.
-
-  - <img src="encoderdecoder.png" width="750px"/>
-
-  (Encoder Decoder) Image source towardsdatascience.com
-
-- LSTMs
-
-  - [This post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) provides an excellent introduction to LSTMS. In a vanilla RNN, the input and the hidden state are simply passed through a single tanh layer.  LSTM (Long Short Term Memory) networks build on this basic transformation by introducing additional gates and a cell state, addressing the fundamental problem of maintaining or resetting context through sentences and regardless of the gap between such context resets. GRUs are LSTM variants that use the gates in various ways to solve the issue of long-term dependencies.
-
-- You can read about RNNs in details on provided links:
-
-  - [Recurrent Neural Networks on TDS](https://towardsdatascience.com/recurrent-neural-networks-d4642c9bc7ce)
-
-  - [Recurrent Neural Networks cheatsheetBy Afshine Amidi and Shervine Amidi](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+- Examples of Sequence Data:
+  - protein sequence
+  - gene sequence
 
 ---
 
@@ -161,8 +93,118 @@ Image source towardsdatascience.com
 
   - When we add them all together, we get the SARIMA(p, d, q)(P, D, Q, s) model. The key takeaway is that before modeling with SARIMA, we must transform our time series to eliminate seasonality and any non-stationary behaviors.
 
-- You can read about RNNs in details on provided links:
+- You can read about Time series in details on provided links:
 
   - [The Complete Guide to Time Series Analysis and Forecasting on TDS](https://towardsdatascience.com/the-complete-guide-to-time-series-analysis-and-forecasting-70d476bfe775)
+
+  - [Recurrent Neural Networks cheatsheetBy Afshine Amidi and Shervine Amidi](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+
+---
+
+## Recurrent neural networks
+
+> Recurrent neural networks, or RNNs, are a form of neural network that allows previous outputs to be used as inputs while maintaining hidden states.
+
+The Below image shows simple neural network
+
+<img src="simpleNN.png" width="450px"/>
+
+Image source towardsdatascience.com
+
+The Below image shows Recurrent neural network
+
+<img src="RNN.png" width="650px"/>
+
+Image source towardsdatascience.com
+
+- Advantages of RNN
+
+  - The ability to process the input of any length
+  - The model's size does not increase with the size of the input
+  - Weights are shared over time.
+
+- How RNNs learn?
+
+  - Recurrent Neural Network remembers the past and bases its decisions on what it has learned from the past. Notice that basic feed-forward networks "know" information as well, but only what they learn during training.
+  - While RNNs learn similarly during training, they often remember what they learned from prior input(s) while producing output (s). It is a part of the network. RNNs can take one or more input vectors and generate one or more output vectors, with the output(s) influenced not only by weights applied to the inputs, as in a typical NN but also by a "hidden" state vector representing the background based on prior input(s)/output(s). As a result, depending on the previous inputs in the sequence, the same input may generate different output.
+
+- Deep RNNs
+
+  - Is it possible to render an RNN "deep" and achieve the multi-level abstractions and representations gained by "depth" in a typical neural network?
+
+  - Here are four ideas for adding depth:
+
+    1. The most obvious is to add hidden states on top of one another, feeding the output of one to the next.
+
+    2. We can also add nonlinear hidden layers between the input and hidden states.
+
+    3. We can deepen the hidden-to-hidden transition.
+
+    4. We can deepen the hidden-to-output transition.
+
+    [This paper](https://arxiv.org/pdf/1312.6026.pdf) by Pascanu et al. investigates this in-depth and establishes that deep RNNs outperform shallow RNNs.
+
+- Bidirectional RNNs
+
+  - It is not only enough to learn from the past to foresee the future; we must also look into the future to correct the past.
+
+  - <img src="bidirectional.png" width="650px"/>
+
+  (Bidirectional RNN) Image source towardsdatascience.com
+
+  - This raises the inevitable question of how far into the future we should look, because if we have to wait for all inputs, the whole operation will become expensive.
+
+- Recursive Neural Networks:
+
+  - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
+
+  - <img src="recursive.png" width="500px"/>
+
+  (Recursive Neural Network) Image source towardsdatascience.com
+
+  - **Recursive Neural Networks are a subset of Recurrent Neural Networks.** It is capable of operating on any hierarchical tree structure. Creating a tree-like structure by parsing through input nodes, merging child nodes into parent nodes, and combining them with other child/parent nodes. Recurrent Neural Networks perform the same function, but their structure is purely linear. Weights are added to the first input node, followed by the second, third, and so on.
+
+  - If the structure is set, as in Recurrent Neural Networks, then the training, backpropagation, and other processes make sense because they are identical to a normal neural network. But, if the structure isn't set, is that also learned?
+
+- RNN Architectures:
+
+  - <img src="RNNarchitectures.png" width="550px"/>
+
+  1. One to Many Architecture: One good example of this architecture is image captioning. It takes one image and then produces a series of words in image captioning. There is just one input but several outputs in this case.
+
+  2. Many to One Architecture: One clear example of this architecture is sentiment grouping. A sentence is categorized as positive or negative in sentiment classification. The input in this case is a string of words, and the output is a binary description.
+
+  3. Many to Many Architecture:
+
+  - The first type is when the input length equals to the output length.
+  - The second type of many to many architecture is when input length does not equal to the output length.
+
+- Encoder Decoder Sequence to Sequence RNNs:
+
+  - Encoder Decoder or Sequence to Sequence RNNs are widely used in translation services. The basic idea is that there are two RNNs, one of which is an encoder that constantly updates its hidden state and generates a single “Context” output. This is then fed into the decoder, which translates the context into a sequence of outputs. Another significant difference in this arrangement is that the lengths of the input and output sequences do not have to be the same.
+
+  - <img src="encoderdecoder.png" width="750px"/>
+
+  (Encoder Decoder) Image source towardsdatascience.com
+
+- LSTMs
+
+  - Traditional RNNs are ineffective at capturing long-term dependencies. This is primarily due to the vanishing gradient problem. Gradients or derivatives decrease exponentially when they spread down the layers while training very deep networks. This is referred to as the Vanishing Gradient Problem. These gradients are used to change the neural network weights. When the gradients disappear, the weights are not changed. It can sometimes absolutely stop the neural network from practicing. This vanishing gradient issue is popular in very deep neural networks.
+
+  - Long Short-Term Memory was developed by Sepp Hochreiter and Juergen Schmidhuber to address the vanishing gradient problem in RNNs. The LSTM hidden layer is a variation on the RNN hidden layer. RNNs can now recall their inputs over long periods thanks to LSTM. A cell state, in addition to the hidden state, is moved to the next time stage in LSTM.
+
+  - <img src="lstm.png" width="750px"/>
+
+  - Long-term dependencies can be captured by LSTM. It can remember previous inputs for extended periods. An LSTM cell has three gates. These gates are used in LSTM memory manipulation. Long short-term memory (LSTM) employs gates to monitor gradient propagation in the memory of a recurrent network.
+
+    - Forget Gate: The forget gate eliminates information from the cell that is no longer useful.
+    - Input Gate: The input gate adds additional useful details to the cell state.
+    - Output Gate: The output gate adds additional useful knowledge to the cell state.
+
+  - [This post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) provides an excellent introduction to LSTMS. In a vanilla RNN, the input and the hidden state are simply passed through a single tanh layer.  LSTM (Long Short Term Memory) networks build on this basic transformation by introducing additional gates and a cell state, addressing the fundamental problem of maintaining or resetting context through sentences and regardless of the gap between such context resets. GRUs are LSTM variants that use the gates in various ways to solve the issue of long-term dependencies.
+
+- You can read about RNNs in details on provided links:
+
+  - [Recurrent Neural Networks on TDS](https://towardsdatascience.com/recurrent-neural-networks-d4642c9bc7ce)
 
   - [Recurrent Neural Networks cheatsheetBy Afshine Amidi and Shervine Amidi](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)

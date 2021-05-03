@@ -1,5 +1,9 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
+- Code Outline (Note: First go through all the theory):
+  1. AutoregressiveModel.ipynb
+  2. SimpleRNNSine.ipynb
+
 ## Sequence Data
 
 > The sequence imposes an explicit order on the observations. The order is important. It must be respected in the formulation of prediction problems that use the sequence data as input or output for the model.

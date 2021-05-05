@@ -1,8 +1,14 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
-- Code Outline (Note: First go through all the theory):
-  1. AutoregressiveModel.ipynb
-  2. SimpleRNNSine.ipynb
+## Code Outline (Note: First go through all the theory):
+| sequence no. | name |
+| --- | --- |
+| 1. | AutoregressiveModel.ipynb |
+| 2. | SimpleRNNSine.ipynb |
+
+---
+## Theory section
+---
 
 ## Sequence Data
 
@@ -24,6 +30,13 @@
 ## Time series
 
 > Most commonly, a time series is a sequence taken at successive equally spaced points in time. As a result, it is a series of discrete-time data. Time series examples include ocean tide heights, sunspot counts, and so on.
+
+- Generally, time series is represented as NxDxT where N is batch, D features, and T is timesteps.
+- As an example Suppose we want to model the path X takes to get to the library.
+  - One sample would be X's single trip to library
+  - D = 2: as the GPS will record (latitude, longitude) pairs
+  - T: The number of (lat, Ing) measurements taken from start to finish of a single trip E.g. trip is 30 minutes, coordinates are measured every second 
+  - Coding example in RNNShapes.ipynb
 
 - Characteristics of time series
 

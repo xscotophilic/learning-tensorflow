@@ -1,10 +1,11 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
 ## Code Outline (Note: First go through all the theory):
-| sequence no. | name |
-| --- | --- |
-| 1. | AutoregressiveModel.ipynb |
-| 2. | SimpleRNNSine.ipynb |
+| sequence no. | name | description |
+| --- | --- | --- |
+| 1. | AutoregressiveModel.ipynb | An autoregressive (AR) model predicts future behavior based on past behavior. |
+| 2. | SimpleRNNSine.ipynb | Simple RNN network predicting sine wave. |
+| 3. | RNNShapes.ipynb | Understanding what shapes are accepted in input, output, and hidden layers in RNN. More details in theory (Time Series). |
 
 ---
 ## Theory section
@@ -221,6 +222,8 @@ Image source towardsdatascience.com
   - [This post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) provides an excellent introduction to LSTMS. In a vanilla RNN, the input and the hidden state are simply passed through a single tanh layer.  LSTM (Long Short Term Memory) networks build on this basic transformation by introducing additional gates and a cell state, addressing the fundamental problem of maintaining or resetting context through sentences and regardless of the gap between such context resets. GRUs are LSTM variants that use the gates in various ways to solve the issue of long-term dependencies.
 
 - You can read about RNNs in details on provided links:
+
+  - [Recurrent Neural Networks, E. Scornet](https://erwanscornet.github.io/teaching/RNN.pdf)
 
   - [Recurrent Neural Networks on TDS](https://towardsdatascience.com/recurrent-neural-networks-d4642c9bc7ce)
 

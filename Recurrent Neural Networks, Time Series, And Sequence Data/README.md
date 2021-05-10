@@ -6,9 +6,10 @@
 | 1. | AutoregressiveModel.ipynb | An autoregressive (AR) model predicts future behavior based on past behavior. |
 | 2. | SimpleRNNSine.ipynb | Simple RNN network predicting sine wave. |
 | 3. | RNNShapes.ipynb | Understanding what shapes are accepted in input, output, and hidden layers in RNN. More details in theory (Time Series). |
-
 ---
+
 ## Theory section
+
 ---
 
 ## Sequence Data
@@ -34,9 +35,10 @@
 
 - Generally, time series is represented as NxDxT where N is batch, D features, and T is timesteps.
 - As an example Suppose we want to model the path X takes to get to the library.
+
   - One sample would be X's single trip to library
   - D = 2: as the GPS will record (latitude, longitude) pairs
-  - T: The number of (lat, Ing) measurements taken from start to finish of a single trip E.g. trip is 30 minutes, coordinates are measured every second 
+  - T: The number of (lat, Ing) measurements taken from start to finish of a single trip E.g. trip is 30 minutes, coordinates are measured every second
   - Coding example in RNNShapes.ipynb
 
 - Characteristics of time series
@@ -205,7 +207,17 @@ Image source towardsdatascience.com
 
   (Encoder Decoder) Image source towardsdatascience.com
 
-- LSTMs
+### Recurrent Neural Networks suffer from short-term memory. They'll have a hard time carrying information from earlier time steps to later ones if the series is long enough. If you're trying to predict something from a paragraph of text, RNNs can leave out important information at the start.
+
+### LSTM ’s and GRU’s were created as the solution to short-term memory. They have internal mechanisms called gates that can regulate the flow of information.
+
+<img src="lstmandgru.png" width="550px"/>
+
+(LSTM and GRU) Image source towardsdatascience.com
+
+- These gates will figure out which data in a series should be kept and which should be discarded. It can then transfer relevant knowledge down the long chain of sequences to make predictions as a result of this. These two networks are responsible for nearly all state-of-the-art recurrent neural network performance.
+
+* LSTMs
 
   - Traditional RNNs are ineffective at capturing long-term dependencies. This is primarily due to the vanishing gradient problem. Gradients or derivatives decrease exponentially when they spread down the layers while training very deep networks. This is referred to as the Vanishing Gradient Problem. These gradients are used to change the neural network weights. When the gradients disappear, the weights are not changed. It can sometimes absolutely stop the neural network from practicing. This vanishing gradient issue is popular in very deep neural networks.
 
@@ -221,10 +233,14 @@ Image source towardsdatascience.com
 
   - [This post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) provides an excellent introduction to LSTMS. In a vanilla RNN, the input and the hidden state are simply passed through a single tanh layer.  LSTM (Long Short Term Memory) networks build on this basic transformation by introducing additional gates and a cell state, addressing the fundamental problem of maintaining or resetting context through sentences and regardless of the gap between such context resets. GRUs are LSTM variants that use the gates in various ways to solve the issue of long-term dependencies.
 
-- You can read about RNNs in details on provided links:
+* You can read about RNNs in details on provided links:
 
   - [Recurrent Neural Networks, E. Scornet](https://erwanscornet.github.io/teaching/RNN.pdf)
 
   - [Recurrent Neural Networks on TDS](https://towardsdatascience.com/recurrent-neural-networks-d4642c9bc7ce)
 
   - [Recurrent Neural Networks cheatsheetBy Afshine Amidi and Shervine Amidi](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+
+* You can read about "LSTM and GRU" in details on provided links:
+
+  - [Illustrated Guide to LSTM’s and GRU’s: A step by step explanation on TDS](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)

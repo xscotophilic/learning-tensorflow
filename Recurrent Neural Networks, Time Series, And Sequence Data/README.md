@@ -12,7 +12,9 @@
 
 ---
 
-## Sequence Data
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47301282/117793004-70e07300-b269-11eb-8e9d-7c2793322b70.png"/>
+</p>
 
 > The sequence imposes an explicit order on the observations. The order is important. It must be respected in the formulation of prediction problems that use the sequence data as input or output for the model.
 
@@ -29,7 +31,9 @@
 
 ---
 
-## Time series
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47301282/117793094-89508d80-b269-11eb-957e-ccfc7c94e1e9.png"/>
+</p>
 
 > Most commonly, a time series is a sequence taken at successive equally spaced points in time. As a result, it is a series of discrete-time data. Time series examples include ocean tide heights, sunspot counts, and so on.
 
@@ -121,7 +125,9 @@
 
 ---
 
-## Recurrent neural networks
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47301282/117793257-adac6a00-b269-11eb-9073-f9ef03636096.png"/>
+</p>
 
 > Recurrent neural networks, or RNNs, are a form of neural network that allows previous outputs to be used as inputs while maintaining hidden states.
 
@@ -206,6 +212,11 @@ Image source towardsdatascience.com
   - <img src="encoderdecoder.png" width="750px"/>
 
   (Encoder Decoder) Image source towardsdatascience.com
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47301282/117793327-bdc44980-b269-11eb-8b47-2475d29d34d2.png"/>
+</p>
+
 
 ### Recurrent Neural Networks suffer from short-term memory. They'll have a hard time carrying information from earlier time steps to later ones if the series is long enough. If you're trying to predict something from a paragraph of text, RNNs can leave out important information at the start.
 

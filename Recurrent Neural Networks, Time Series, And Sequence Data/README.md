@@ -6,6 +6,7 @@
 | 1. | AutoregressiveModel.ipynb | An autoregressive (AR) model predicts future behavior based on past behavior. |
 | 2. | SimpleRNNSine.ipynb | Simple RNN network predicting sine wave. |
 | 3. | RNNShapes.ipynb | Understanding what shapes are accepted in input, output, and hidden layers in RNN. More details in theory (Time Series). |
+| 4. | LSTM_Nonlinear.ipynb | Trying LSTM. |
 ---
 
 ## Theory section

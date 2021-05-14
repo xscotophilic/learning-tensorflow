@@ -7,6 +7,8 @@
 | 2. | SimpleRNNSine.ipynb | Simple RNN network predicting sine wave. |
 | 3. | RNNShapes.ipynb | Understanding what shapes are accepted in input, output, and hidden layers in RNN. More details in theory (Time Series). |
 | 4. | LSTM_Nonlinear.ipynb | Trying LSTM. |
+| 5. | LSTM_long_distance.ipynb | LSTM (why we need to model long-distance dependencies to
+create workable applications? "She has a lot of confidence in herself," for example, is an example of a long-distance grammatical constraint. In order to interpret it, we must decode long-distance dependencies.) |
 ---
 
 ## Theory section

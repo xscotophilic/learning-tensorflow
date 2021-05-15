@@ -47,7 +47,7 @@
 
   - Informally, autocorrelation is the similarity between observations as a function of the time lag between them.
 
-  - <img src="autocorrelationchar.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347622-468cff00-b562-11eb-9add-f5cdfd85da16.png"/>
 
   (autocorrelation) Image source towardsdatascience.com
 
@@ -55,7 +55,7 @@
 
   - Seasonality refers to periodic fluctuations.
 
-  - <img src="seasonality.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347632-5dcbec80-b562-11eb-833a-668e4f851573.png"/>
 
   (Seasonality) Image source towardsdatascience.com
 
@@ -65,7 +65,7 @@
 
   - If the statistical properties of a time series do not change over time, it is said to be stationary. In other words, the mean and variance are constant, and the covariance is independent of time.
 
-  - <img src="stationary.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347647-7936f780-b562-11eb-9bda-b916a8ca4c91.png"/>
 
   (Stationarity) Image source towardsdatascience.com
 
@@ -79,7 +79,7 @@
 
   - The next observation is simply the mean of all previous observations, according to this model.
 
-  - <img src="movingaverage.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347670-966bc600-b562-11eb-8db4-5c5b55ff4f44.png"/>
 
   (Moving average) Image source towardsdatascience.com
 
@@ -87,7 +87,7 @@
 
   - Exponential smoothing employs a similar logic to moving average, but each observation is given a different decreasing weight. In other words, as we step away from the present, observations become less relevant.
 
-  - <img src="exponentialsmoothing.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347685-b3a09480-b562-11eb-9543-46b27f233fb3.png"/>
 
   (Exponential smoothing) Image source towardsdatascience.com
 
@@ -97,13 +97,13 @@
 
   - Second, there is the autoregression model AR (p). This is essentially a time series regression onto itself. In this case, we conclude that the current value is influenced by previous values with some lag. It needs a parameter p, which represents the maximum amount of latency. To find it, we examine the partial autocorrelation plot and locate the lag after which the majority of lags are not relevant.
 
-  - <img src="partialautocorrelation.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347692-c5823780-b562-11eb-9357-3811b332b9c9.png"/>
 
   (Partial autocorrelation) Image source towardsdatascience.com
 
   - The moving average model MA is then applied (q). This requires a parameter q, which represents the largest lag, after which other lags on the autocorrelation plot are not important.
 
-  - <img src="autocorrelationinARIMA.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347710-d8950780-b562-11eb-94d2-4defee6a6f3c.png"/>
 
   (Autocorrelation) Image source towardsdatascience.com
 
@@ -129,13 +129,13 @@
 
 The Below image shows simple neural network
 
-<img src="simpleNN.png" width="450px"/>
+<img src="https://user-images.githubusercontent.com/47301282/118347715-ed719b00-b562-11eb-8653-c5782c500cf3.png"/>
 
 Image source towardsdatascience.com
 
 The Below image shows Recurrent neural network
 
-<img src="RNN.png" width="650px"/>
+<img src="https://user-images.githubusercontent.com/47301282/118347720-fd897a80-b562-11eb-82c0-cf1a98db5e9f.png"/>
 
 Image source towardsdatascience.com
 
@@ -170,7 +170,7 @@ Image source towardsdatascience.com
 
   - It is not only enough to learn from the past to foresee the future; we must also look into the future to correct the past.
 
-  - <img src="bidirectional.png" width="650px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347728-0f6b1d80-b563-11eb-9c2b-68d080d35bdd.png"/>
 
   (Bidirectional RNN) Image source towardsdatascience.com
 
@@ -180,7 +180,7 @@ Image source towardsdatascience.com
 
   - A recurrent neural network sequentially parses the inputs. A recursive neural network is similar in that transitions are applied to inputs repeatedly, but not necessarily sequentially.
 
-  - <img src="recursive.png" width="500px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347735-1e51d000-b563-11eb-8ac9-c8c71f9f9bd7.png"/>
 
   (Recursive Neural Network) Image source towardsdatascience.com
 
@@ -190,7 +190,7 @@ Image source towardsdatascience.com
 
 - RNN Architectures:
 
-  - <img src="RNNarchitectures.png" width="550px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347743-2c075580-b563-11eb-8388-fa9e2fadfb8b.png"/>
 
   1. One to Many Architecture: One good example of this architecture is image captioning. It takes one image and then produces a series of words in image captioning. There is just one input but several outputs in this case.
 
@@ -205,7 +205,7 @@ Image source towardsdatascience.com
 
   - Encoder Decoder or Sequence to Sequence RNNs are widely used in translation services. The basic idea is that there are two RNNs, one of which is an encoder that constantly updates its hidden state and generates a single “Context” output. This is then fed into the decoder, which translates the context into a sequence of outputs. Another significant difference in this arrangement is that the lengths of the input and output sequences do not have to be the same.
 
-  - <img src="encoderdecoder.png" width="750px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347751-39bcdb00-b563-11eb-8d06-e157a66e60cc.png"/>
 
   (Encoder Decoder) Image source towardsdatascience.com
 
@@ -218,7 +218,7 @@ Image source towardsdatascience.com
 
 ### LSTM ’s and GRU’s were created as the solution to short-term memory. They have internal mechanisms called gates that can regulate the flow of information.
 
-<img src="lstmandgru.png" width="550px"/>
+<img src="https://user-images.githubusercontent.com/47301282/118347759-480af700-b563-11eb-9d41-d20d7a3644b7.png"/>
 
 (LSTM and GRU) Image source towardsdatascience.com
 
@@ -230,7 +230,7 @@ Image source towardsdatascience.com
 
   - Long Short-Term Memory was developed by Sepp Hochreiter and Juergen Schmidhuber to address the vanishing gradient problem in RNNs. The LSTM hidden layer is a variation on the RNN hidden layer. RNNs can now recall their inputs over long periods thanks to LSTM. A cell state, in addition to the hidden state, is moved to the next time stage in LSTM.
 
-  - <img src="lstm.png" width="750px"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118347766-5822d680-b563-11eb-9dcf-3075b532d805.png"/>
 
   - Long-term dependencies can be captured by LSTM. It can remember previous inputs for extended periods. An LSTM cell has three gates. These gates are used in LSTM memory manipulation. Long short-term memory (LSTM) employs gates to monitor gradient propagation in the memory of a recurrent network.
 

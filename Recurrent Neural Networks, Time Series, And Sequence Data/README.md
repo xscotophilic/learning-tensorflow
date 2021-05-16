@@ -1,7 +1,7 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
 ## Code Outline (Note: First go through all the theory):
-<img src="table.png"/>
+<img src="https://user-images.githubusercontent.com/47301282/118388194-904c1700-b640-11eb-9e2f-c03086d0285d.png"/>
 ---
 
 ## Theory section

@@ -9,7 +9,7 @@
 ---
 
 <p align="center">
-  <!-- <img src=".png" alt="Preprocessing"/> -->
+  <img src="https://user-images.githubusercontent.com/47301282/118823459-9fe48d80-b8d6-11eb-9ce8-a23361701f6b.png" alt="Preprocessing"/>
 </p>
 
 ### Text Preprocessing
@@ -30,7 +30,7 @@ A big part of the preprocessing is something encoding. This entails representing
 
   - One-Hot Encoding is a broad method for vectorizing any categorical feature. To create and update the vectorization, simply add a new entry in the vector with a one for each new category. However, because of the speed and simplicity.
 
-  - <img src="ohe.png"/>
+  - <img src="https://user-images.githubusercontent.com/47301282/118823580-b4288a80-b8d6-11eb-81e9-4efd5b3441fe.png"/>
 
   - Problems with One-Hot Encoding:
 

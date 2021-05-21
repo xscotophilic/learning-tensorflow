@@ -3,7 +3,7 @@
 ## Code Outline (Note: First go through all the theory):
 
 <p align="center">
-  <!-- <img src=".png" alt="Outline"/> -->
+  <img src="https://user-images.githubusercontent.com/47301282/119091939-6b361a80-ba2b-11eb-8c63-0ece6e8dd2c9.png" alt="Outline"/>
 </p>
 
 ---

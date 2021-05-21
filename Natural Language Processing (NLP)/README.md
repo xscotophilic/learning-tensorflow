@@ -61,14 +61,14 @@ Embeddings are a good choice if you have enough training data, enough training t
 ---
 
 <p align="center">
-  <img src=".png" alt="TextClassification"/>
+  <img src="https://user-images.githubusercontent.com/47301282/119089235-75eeb080-ba27-11eb-98cd-c8c40a3b0d7a.png" alt="TextClassification"/>
 </p>
 
 ### Text Classification
 
 Google says: Text classification algorithms are at the heart of a variety of software systems that process text data at scale. Email software uses text classification to determine whether incoming mail is sent to the inbox or filtered into the spam folder. Discussion forums use text classification to determine whether comments should be flagged as inappropriate.
 
-<img src=".png" alt="workflow"/>
+<img src="https://user-images.githubusercontent.com/47301282/119089291-8bfc7100-ba27-11eb-84c8-9b8df8ac3976.png" alt="workflow"/>
 
 Image by Google
 
@@ -81,7 +81,7 @@ There are different models (eg. LSTM, CNN, multinomial Naïve Bayes, SVM, Logist
 ---
 
 <p align="center">
-  <img src=".png" alt="ModelSelection"/>
+  <img src="https://user-images.githubusercontent.com/47301282/119089343-9c145080-ba27-11eb-9e1b-a1ad19888d20.png" alt="ModelSelection"/>
 </p>
 
 ### Model Selection in Text Classification

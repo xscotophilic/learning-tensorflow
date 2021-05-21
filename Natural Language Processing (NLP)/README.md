@@ -59,3 +59,31 @@ Embeddings are a good choice if you have enough training data, enough training t
   - [Word Embedding in NLP: One-Hot Encoding and Skip-Gram Neural Network on TDS](https://towardsdatascience.com/word-embedding-in-nlp-one-hot-encoding-and-skip-gram-neural-network-81b424da58f2)
 
 ---
+
+<p align="center">
+  <img src=".png" alt="TextClassification"/>
+</p>
+
+### Text Classification
+
+Google says: Text classification algorithms are at the heart of a variety of software systems that process text data at scale. Email software uses text classification to determine whether incoming mail is sent to the inbox or filtered into the spam folder. Discussion forums use text classification to determine whether comments should be flagged as inappropriate.
+
+<img src=".png" alt="workflow"/>
+
+Image by Google
+
+There are different models (eg. LSTM, CNN, multinomial Naïve Bayes, SVM, Logistic Regression, boosting) which you can try and decide which is best fit for you.
+
+- You can read about Text Preprocessing in details on provided links:
+
+  - [Text-classification-guide by Google](https://developers.google.com/machine-learning/guides/text-classification)
+
+---
+
+<p align="center">
+  <img src=".png" alt="ModelSelection"/>
+</p>
+
+### Model Selection in Text Classification
+
+Which model should I go with? When considering various aspects, it becomes hazy. I'm talking about how to compare traditional methods (multinomial Naïve Bayes, SVM, Logistic Regression, boosting, etc.) and neural networks (LSTM, RNN, CNN, etc.). Various models should be tried to determine which is the best fit for you.

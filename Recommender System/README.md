@@ -1,15 +1,11 @@
 # Recommender System
 
-## Code Outline (Note: First go through all the theory):
-
-## <!-- <img src="" alt="Outline"/> -->
-
 ## Theory section
 
 ---
 
 <p align="center">
-  <!-- <img src="" alt="RecommenderSystem"/> -->
+  <img src="https://user-images.githubusercontent.com/47301282/119214679-38049180-bae6-11eb-8a96-8a57c6cdf266.png" alt="RecommenderSystem"/>
 </p>
 
 - How to recommend?
@@ -26,8 +22,14 @@
 
   - There is nothing left to recommend if all users have seen all movies! Fortunately, this is not the case for real datasets.
 
-  - <!-- <img src="" alt="Dataset"/> -->
+  - <img src="https://user-images.githubusercontent.com/47301282/119214359-dfcc9000-bae3-11eb-8048-58036222d14c.png" alt="Dataset"/>
 
-- Flow diagram
+---
 
-  - <!-- <img src="" alt="Flowdiagram"/> -->
+<p align="center">
+  Flow diagram for data
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47301282/119214730-9762a180-bae6-11eb-9ad1-e9689ac6215f.jpg" alt="Flowdiagram"/>
+</p>

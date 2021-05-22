@@ -14,6 +14,7 @@
   3. Convolutional neural network (CNN)
   4. Recurrent Neural Networks, Time Series, And Sequence Data
   5. Natural Language Processing (NLP)
+  6. Recommender System
 
 ---
 

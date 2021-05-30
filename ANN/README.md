@@ -8,4 +8,4 @@
 
 - You can read about ANN in details on provided links:
 
-  - [Deep Learning Basics](https://github.com/xscotophilic/ML-Deep-Learning-Basics)
+  - [Deep Learning Basics](https://github.com/xscotophilic/Machine-Learning-Basic-Lessons/tree/main/7%20Deep%20Learning)

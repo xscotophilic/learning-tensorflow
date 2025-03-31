@@ -2,9 +2,7 @@
 
 > Coding and documenting while I learn. The outline is provided in this Readme and details are provided in each folder.
 
----
-
-### All of the theories for the given codes can be found in other ML repositories I've already made. Each folder's readme file already contains the links of other ML repositories. If there are no other ML repositories for the given outline, please search this repo, Google, or the books, or any external material.
+All the theories related to the given codes can be found in other ML repositories I’ve already created. Each folder’s README file includes links to those repositories for easy reference. If there isn’t a specific repository link for a given topic, you’ll still find relevant information within this repo. Additionally, you’re always welcome to explore external resources like Google, books, or other materials to deepen your understanding.
 
 ---
 
@@ -15,9 +13,3 @@
   4. Recurrent Neural Networks, Time Series, And Sequence Data
   5. Natural Language Processing (NLP)
   6. Recommender System
-
----
-
-### If you like my work, you can contribute to https://www.patreon.com/xscotophilic
-
-### Thank You!

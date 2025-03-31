@@ -2,15 +2,11 @@
 
 ## Code Outline (Note: First go through all the theory):
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/119091939-6b361a80-ba2b-11eb-8c63-0ece6e8dd2c9.png" alt="Outline"/>
-</p>
-
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/118823459-9fe48d80-b8d6-11eb-9ce8-a23361701f6b.png" alt="Preprocessing"/>
-</p>
+| Sequence No. | Notebook Name | Description |
+|-------------|--------------|-------------|
+| 1 | `text_preprocessing.ipynb` | Notebook for preprocessing text data for NLP tasks. |
+| 2 | `spam_detection_using_lstm.ipynb` | Spam detection using a Long Short-Term Memory (LSTM) neural network. |
+| 3 | `spam_detection_using_cnn.ipynb` | Spam detection using a Convolutional Neural Network (CNN). |
 
 ### Text Preprocessing
 
@@ -58,12 +54,6 @@ Embeddings are a good choice if you have enough training data, enough training t
 
   - [Word Embedding in NLP: One-Hot Encoding and Skip-Gram Neural Network on TDS](https://towardsdatascience.com/word-embedding-in-nlp-one-hot-encoding-and-skip-gram-neural-network-81b424da58f2)
 
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/119089235-75eeb080-ba27-11eb-98cd-c8c40a3b0d7a.png" alt="TextClassification"/>
-</p>
-
 ### Text Classification
 
 Google says: Text classification algorithms are at the heart of a variety of software systems that process text data at scale. Email software uses text classification to determine whether incoming mail is sent to the inbox or filtered into the spam folder. Discussion forums use text classification to determine whether comments should be flagged as inappropriate.
@@ -77,12 +67,6 @@ There are different models (eg. LSTM, CNN, multinomial Naïve Bayes, SVM, Logist
 - You can read about Text Preprocessing in details on provided links:
 
   - [Text-classification-guide by Google](https://developers.google.com/machine-learning/guides/text-classification)
-
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/119089343-9c145080-ba27-11eb-9e1b-a1ad19888d20.png" alt="ModelSelection"/>
-</p>
 
 ### Model Selection in Text Classification
 

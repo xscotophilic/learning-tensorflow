@@ -1,16 +1,20 @@
 # Recurrent Neural Networks, Time Series, And Sequence Data
 
 ## Code Outline (Note: First go through all the theory):
-<img src="https://user-images.githubusercontent.com/47301282/118388194-904c1700-b640-11eb-9e2f-c03086d0285d.png"/>
----
+
+| Sequence No. | Notebook Name | Description |
+|-------------|--------------|-------------|
+| 1 | `autoregressive_model.ipynb` | An autoregressive (AR) model predicts future behavior based on past data. |
+| 2 | `simple_rnn_sine.ipynb` | Simple RNN network predicting a sine wave. |
+| 3 | `rnn_shapes.ipynb` | Understanding input, output, and hidden layer shapes in RNNs. More details in [Time Series Theory](#time-series). |
+| 4 | `lstm_nonlinear.ipynb` | Experimenting with LSTM for nonlinear sequence modeling. |
+| 5 | lstm_long_distance.ipynb | Explores how LSTMs handle long-distance dependencies better than RNNs, overcoming the vanishing gradient problem.|
+| 6 | `rnn_image_classification.ipynb` | Using RNNs for image classification tasks. |
+| 7 | `rnn_stock_returns_forecasting.ipynb` | Predicting future stock prices of Starbucks (SBUX) using a Recurrent Neural Network (RNN). |
 
 ## Theory section
 
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/117793004-70e07300-b269-11eb-8e9d-7c2793322b70.png"/>
-</p>
+## Sequence Data
 
 > The sequence imposes an explicit order on the observations. The order is important. It must be respected in the formulation of prediction problems that use the sequence data as input or output for the model.
 
@@ -25,11 +29,7 @@
   - protein sequence
   - gene sequence
 
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/117793094-89508d80-b269-11eb-957e-ccfc7c94e1e9.png"/>
-</p>
+## Time Series
 
 > Most commonly, a time series is a sequence taken at successive equally spaced points in time. As a result, it is a series of discrete-time data. Time series examples include ocean tide heights, sunspot counts, and so on.
 
@@ -119,11 +119,7 @@
 
   - [Recurrent Neural Networks cheatsheetBy Afshine Amidi and Shervine Amidi](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/117793257-adac6a00-b269-11eb-9073-f9ef03636096.png"/>
-</p>
+## Recurrent Neural Networks
 
 > Recurrent neural networks, or RNNs, are a form of neural network that allows previous outputs to be used as inputs while maintaining hidden states.
 
@@ -209,10 +205,7 @@ Image source towardsdatascience.com
 
   (Encoder Decoder) Image source towardsdatascience.com
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/117793327-bdc44980-b269-11eb-8b47-2475d29d34d2.png"/>
-</p>
-
+## LSTM & GRU
 
 ### Recurrent Neural Networks suffer from short-term memory. They'll have a hard time carrying information from earlier time steps to later ones if the series is long enough. If you're trying to predict something from a paragraph of text, RNNs can leave out important information at the start.
 

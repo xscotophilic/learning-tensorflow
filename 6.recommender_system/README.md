@@ -2,12 +2,6 @@
 
 ## Theory section
 
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47301282/119214679-38049180-bae6-11eb-8a96-8a57c6cdf266.png" alt="RecommenderSystem"/>
-</p>
-
 - How to recommend?
 
   - suppose: User u1 gave Rick and Morty a 5, Bojack Horseman got a 5, and Wolfwalkers got a 5. User u1 is most likely a lover of Animation and Adventure.
@@ -24,11 +18,7 @@
 
   - <img src="https://user-images.githubusercontent.com/47301282/119214359-dfcc9000-bae3-11eb-8048-58036222d14c.png" alt="Dataset"/>
 
----
-
-<p align="center">
-  Flow diagram for data
-</p>
+### Flow diagram for data
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47301282/119214730-9762a180-bae6-11eb-9ad1-e9689ac6215f.jpg" alt="Flowdiagram"/>

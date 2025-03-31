@@ -14,9 +14,9 @@
   1. Convolutional neural network (dataset: CIFAR10)(cnn_cifar10.ipynb) (For Prediction of single image - upload cifar_test images on colab.)
   2. Convolutional neural network (dataset: fashion_mnist)(cnn_fashion_mnist.ipynb) (For Prediction of single image - upload fashion_mnist_tests images on colab.)
 
-## CNN for CIFAR-10 vs. CNN for Fashion-MNIST  
+## CNN for CIFAR-10 vs. CNN for Fashion-MNIST
 
-Both **CIFAR-10** and **Fashion-MNIST** datasets are commonly used for training **Convolutional Neural Networks (CNNs)**, but they differ in complexity and characteristics.  
+Both **CIFAR-10** and **Fashion-MNIST** datasets are commonly used for training **Convolutional Neural Networks (CNNs)**, but they differ in complexity and characteristics.
 
 | Feature               | **CNN for CIFAR-10** | **CNN for Fashion-MNIST** |
 |----------------------|--------------------|------------------------|

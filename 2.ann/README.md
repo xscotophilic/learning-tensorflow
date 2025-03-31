@@ -10,7 +10,7 @@
   1. ANN Classification (artificial_neural_network_classification.ipynb) (For Prediction of single image - upload test images on colab.)
   2. ANN Regression (artificial_neural_network_regression.ipynb)
 
-## ANN Classification vs. ANN Regression  
+## ANN Classification vs. ANN Regression
 
 Both classification and regression problems can be solved using **Artificial Neural Networks (ANNs)**, but they have different objectives and structures.
 
